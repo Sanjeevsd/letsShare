@@ -20,10 +20,8 @@
         android:id="@+id/seventh_sem"
         android:layout_width="109dp"
         android:layout_height="99dp"
-        android:layout_marginStart="117dp"
-        android:layout_marginLeft="117dp"
         android:layout_marginTop="480dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fifth_sem"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/circle" />
 
@@ -66,10 +64,10 @@
         android:id="@+id/second_sem"
         android:layout_width="109dp"
         android:layout_height="99dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="132dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginRight="116dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/first_sem"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/circle" />
 
@@ -77,10 +75,8 @@
         android:id="@+id/first_sem"
         android:layout_width="109dp"
         android:layout_height="99dp"
-        android:layout_marginStart="113dp"
-        android:layout_marginLeft="113dp"
         android:layout_marginTop="132dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/third_sem"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/circle" />
 
@@ -110,10 +106,10 @@
         android:id="@+id/eighth_sem"
         android:layout_width="109dp"
         android:layout_height="99dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="480dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginRight="116dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seventh_sem"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/circle" />
 
