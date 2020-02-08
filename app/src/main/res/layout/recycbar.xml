@@ -8,44 +8,51 @@
 
     <ImageView
         android:id="@+id/book_view"
-        android:layout_width="117dp"
-        android:layout_height="182dp"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/circle" />
 
     <TextView
         android:id="@+id/Book_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="278dp"
-        android:layout_marginRight="278dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/book_view" />
+        android:layout_marginBottom="10dp"
+        android:text="@string/nav_header_subtitle"
+        app:layout_constraintBottom_toTopOf="@+id/price-view"
+        app:layout_constraintEnd_toEndOf="@+id/price-view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/price-view" />
 
     <TextView
         android:id="@+id/price-view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintStart_toEndOf="@+id/book_view"
-        app:layout_constraintTop_toBottomOf="@+id/Book_title" />
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="price"
+        app:layout_constraintBottom_toTopOf="@+id/poster_name"
+        app:layout_constraintEnd_toEndOf="@+id/poster_name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/poster_name" />
 
     <TextView
         android:id="@+id/poster_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintStart_toEndOf="@+id/book_view"
-        app:layout_constraintTop_toBottomOf="@+id/price-view" />
+        android:layout_marginBottom="10dp"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/buy_button"
+        app:layout_constraintEnd_toEndOf="@+id/buy_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/buy_button" />
 
     <Button
         android:id="@+id/buy_button"

@@ -78,9 +78,9 @@ class book_activity : AppCompatActivity() {
 
 class dataitem(val noticetitle: books): Item<GroupieViewHolder>(){
     override fun bind(viewHolder: GroupieViewHolder, position: Int) {
-        viewHolder.itemView.price_view.text=noticetitle.price
-        viewHolder.itemView.Book_title.text=noticetitle.bookname
-        viewHolder.itemView.poster_name.text=noticetitle.uname
+        viewHolder.itemView.price_view.text="Price:"+noticetitle.price+" RS."
+        viewHolder.itemView.Book_title.text="Book Name:"+noticetitle.bookname
+        viewHolder.itemView.poster_name.text="Uploader:"+noticetitle.uname
         Log.d("notice",noticetitle.bookname)
         viewHolder.itemView.book_view.setImageDrawable(null)
         if (noticetitle.fileurl!=""){
