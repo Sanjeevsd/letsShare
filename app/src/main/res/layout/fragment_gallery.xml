@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login_bg">
-
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <TextView
         android:id="@+id/upload_frag"
         android:layout_width="316dp"
@@ -23,7 +25,7 @@
         android:id="@+id/select_frag"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="50dp"
         android:background="#BB7CAC"
         android:text="Select Photo"
         android:textAlignment="center"
@@ -35,7 +37,7 @@
         android:id="@+id/post_frag"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="50dp"
         android:background="#BB7CAC"
         android:text="Post"
         android:textAlignment="center"
@@ -49,8 +51,8 @@
         android:layout_height="57dp"
         android:layout_marginTop="12dp"
         android:ems="10"
+        android:hint="Title Of Book"
         android:inputType="textPersonName"
-        android:text="Title Of Book"
         android:textAlignment="center"
         android:textColor="#D9CCCA"
         android:textSize="20sp"
@@ -64,8 +66,8 @@
         android:layout_height="57dp"
         android:layout_marginTop="12dp"
         android:ems="10"
+        android:hint="Semester"
         android:inputType="textPersonName"
-        android:text="Semester"
         android:textAlignment="center"
         android:textColor="#D9CCCA"
         app:layout_constraintEnd_toEndOf="@+id/title_frag"
@@ -78,11 +80,12 @@
         android:layout_height="57dp"
         android:layout_marginTop="12dp"
         android:ems="10"
+        android:hint="Price"
         android:inputType="textPersonName"
-        android:text="Price"
         android:textAlignment="center"
         android:textColor="#D9CCCA"
         app:layout_constraintEnd_toEndOf="@+id/semester_frag"
         app:layout_constraintStart_toStartOf="@+id/semester_frag"
         app:layout_constraintTop_toBottomOf="@+id/semester_frag" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
