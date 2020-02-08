@@ -17,6 +17,11 @@ class loginactivity : AppCompatActivity() {
         button_login.setOnClickListener {
             login()
         }
+        signup_login.setOnClickListener {
+            val ints=Intent(this,registersctivity::class.java)
+            startActivity(ints)
+            finish()
+        }
     }
     fun login(){
         val email=username_login.text.toString()
