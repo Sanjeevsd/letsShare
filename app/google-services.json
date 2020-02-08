@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "237738217422",
+    "firebase_url": "https://letsshare-db78c.firebaseio.com",
+    "project_id": "letsshare-db78c",
+    "storage_bucket": "letsshare-db78c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237738217422:android:a7a7b57c8e94242be2259f",
+        "android_client_info": {
+          "package_name": "com.example.letsshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237738217422-u8tu6v2uieuanask9l9idhfo2nse6t1v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.letsshare",
+            "certificate_hash": "1af2dd9f22b50d86d567c0899b539340082b47e0"
+          }
+        },
+        {
+          "client_id": "237738217422-htdkf9uj61i69oo8tr1jpghr4drmbtto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFW1d7P_zqxUpymYxvsxfJgdE_vzk1LAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237738217422-htdkf9uj61i69oo8tr1jpghr4drmbtto.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
