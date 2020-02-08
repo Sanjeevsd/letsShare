@@ -18,6 +18,11 @@ class registersctivity:AppCompatActivity() {
             checkValidity()
 
         }
+        login_reg.setOnClickListener {
+            //launch login activity
+            login_activ()
+            finish()
+        }
 
     }
     private fun checkValidity() {
