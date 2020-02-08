@@ -110,16 +110,22 @@ class GalleryFragment : Fragment() {
             }
             }
 
-    private fun postpdf(){
-        val filename=titlepdf_frag.text.toString()
-        Log.d("note","the url is::::$fileurl")
-        val semester=semesterpdf_frag.text.toString()
-        val notesen=notesend(filename,fileurl)
-        dataref.child("/Notes/$semester").setValue(notesen)
-            .addOnCompleteListener {
-            }
+    private fun postpdf() {
+        val filename = titlepdf_frag.text.toString()
+        Log.d("note", "the url is::::$fileurl")
+        val semester1 = semesterpdf_frag.text.toString()
+        if (filename.isEmpty() || semester1.isEmpty()) {
+            Toast.makeText(context, "Please Fill all the information", Toast.LENGTH_SHORT).show()
+            return
+        } else {
+            val notesen = notesend(filename, fileurl)
+            dataref.child("/Notes/$semester1").setValue(notesen)
+                .addOnCompleteListener {
+                }
+            Toast.makeText(context, "PDF Posted", Toast.LENGTH_SHORT).show()
 
 
+        }
     }
 
 
