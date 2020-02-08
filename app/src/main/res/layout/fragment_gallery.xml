@@ -8,15 +8,16 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <TextView
         android:id="@+id/upload_frag"
         android:layout_width="316dp"
         android:layout_height="57dp"
-        android:layout_marginTop="100dp"
-        android:text="Upload"
+        android:layout_marginTop="20dp"
+        android:background="#BB7CAC"
+        android:text="Upload Book"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:background="#BB7CAC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +26,7 @@
         android:id="@+id/select_frag"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:background="#BB7CAC"
         android:text="Select Photo"
         android:textAlignment="center"
@@ -37,9 +38,9 @@
         android:id="@+id/post_frag"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:background="#BB7CAC"
-        android:text="Post"
+        android:text="Post Book"
         android:textAlignment="center"
         android:textColor="#D9CCCA"
         app:layout_constraintEnd_toEndOf="@+id/price_frag"
@@ -87,5 +88,71 @@
         app:layout_constraintEnd_toEndOf="@+id/semester_frag"
         app:layout_constraintStart_toStartOf="@+id/semester_frag"
         app:layout_constraintTop_toBottomOf="@+id/semester_frag" />
+
+    <TextView
+        android:id="@+id/uploadpdf_frag"
+        android:layout_width="316dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="150dp"
+
+        android:text="Upload PDf"
+        android:textAlignment="center"
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="@+id/price_frag"
+        app:layout_constraintStart_toStartOf="@+id/price_frag"
+        app:layout_constraintTop_toBottomOf="@+id/price_frag" />
+
+    <EditText
+        android:id="@+id/titlepdf_frag"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
+        android:layout_width="316dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Title of PDF"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/uploadpdf_frag"
+        app:layout_constraintStart_toStartOf="@+id/uploadpdf_frag"
+        app:layout_constraintTop_toBottomOf="@+id/uploadpdf_frag" />
+
+    <EditText
+        android:id="@+id/semesterpdf_frag"
+        android:layout_width="316dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Semester"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
+        app:layout_constraintEnd_toEndOf="@+id/titlepdf_frag"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titlepdf_frag"
+        app:layout_constraintTop_toBottomOf="@+id/titlepdf_frag" />
+
+    <Button
+        android:id="@+id/selectpdf_frag"
+        android:layout_width="100dp"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Selecct PDF"
+        android:background="#BB7CAC"
+        app:layout_constraintStart_toStartOf="@+id/semesterpdf_frag"
+        app:layout_constraintTop_toBottomOf="@+id/semesterpdf_frag" />
+
+    <Button
+        android:id="@+id/postpdf_frag"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#BB7CAC"
+        android:text="Post PDF"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
+        app:layout_constraintEnd_toEndOf="@+id/semesterpdf_frag"
+        app:layout_constraintTop_toBottomOf="@+id/semesterpdf_frag" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
