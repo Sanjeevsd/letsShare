@@ -1,19 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/text_slideshow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+    <ImageView
+        android:id="@+id/fourth_sem_notes"
+        android:layout_width="109dp"
+        android:layout_height="99dp"
         android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView13_notes"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/seventh_sem_notes"
+        android:layout_width="109dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintStart_toStartOf="@+id/first_sem_notes"
+        app:layout_constraintTop_toBottomOf="@+id/first_sem_notes"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/sixth_sem_notes"
+        android:layout_width="109dp"
+        android:layout_height="99dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_sem_notes"
+        app:srcCompat="@drawable/circle" />
+
+    <TextView
+        android:id="@+id/sem_fourth_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6th\n sem"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sixth_sem_notes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sixth_sem_notes"
+        app:layout_constraintTop_toTopOf="@+id/sixth_sem_notes" />
+
+    <ImageView
+        android:id="@+id/imageView13_notes"
+        android:layout_width="131dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/second_sem_notes"
+        android:layout_width="109dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/first_sem_notes"
+        app:layout_constraintStart_toEndOf="@+id/first_sem_notes"
+        app:layout_constraintTop_toTopOf="@+id/first_sem_notes"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/first_sem_notes"
+        android:layout_width="109dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toEndOf="@+id/textView5_notes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle" />
+
+    <TextView
+        android:id="@+id/textView4_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1st\n sem"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/first_sem_notes"
+        app:layout_constraintEnd_toEndOf="@+id/first_sem_notes"
+        app:layout_constraintStart_toStartOf="@+id/first_sem_notes"
+        app:layout_constraintTop_toTopOf="@+id/first_sem_notes" />
+
+    <ImageView
+        android:id="@+id/third_sem_notes"
+        android:layout_width="109dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView13_notes"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/fifth_sem_notes"
+        android:layout_width="109dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_sem_notes"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/eighth_sem_notes"
+        android:layout_width="109dp"
+        android:layout_height="99dp"
+        app:layout_constraintBottom_toBottomOf="@+id/seventh_sem_notes"
+        app:layout_constraintEnd_toEndOf="@+id/second_sem_notes"
+        app:layout_constraintTop_toTopOf="@+id/seventh_sem_notes"
+        app:srcCompat="@drawable/circle" />
+
+    <TextView
+        android:id="@+id/sem_first_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2nd\n sem"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/second_sem_notes"
+        app:layout_constraintEnd_toEndOf="@+id/second_sem_notes"
+        app:layout_constraintStart_toStartOf="@+id/second_sem_notes"
+        app:layout_constraintTop_toTopOf="@+id/second_sem_notes" />
+
+    <TextView
+        android:id="@+id/textView5_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3rd\n sem"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/third_sem_notes"
+        app:layout_constraintEnd_toEndOf="@+id/third_sem_notes"
+        app:layout_constraintStart_toStartOf="@+id/third_sem_notes"
+        app:layout_constraintTop_toTopOf="@+id/third_sem_notes" />
+
+    <TextView
+        android:id="@+id/textView6_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4th\n sem"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fourth_sem_notes"
+        app:layout_constraintEnd_toEndOf="@+id/fourth_sem_notes"
+        app:layout_constraintStart_toStartOf="@+id/fourth_sem_notes"
+        app:layout_constraintTop_toTopOf="@+id/fourth_sem_notes" />
+
+    <TextView
+        android:id="@+id/textView7_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5th \n sem"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fifth_sem_notes"
+        app:layout_constraintEnd_toEndOf="@+id/fifth_sem_notes"
+        app:layout_constraintStart_toStartOf="@+id/fifth_sem_notes"
+        app:layout_constraintTop_toTopOf="@+id/fifth_sem_notes" />
+
+    <TextView
+        android:id="@+id/textView8__notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7th \n sem"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/seventh_sem_notes"
+        app:layout_constraintEnd_toEndOf="@+id/seventh_sem_notes"
+        app:layout_constraintStart_toStartOf="@+id/seventh_sem_notes"
+        app:layout_constraintTop_toTopOf="@+id/seventh_sem_notes" />
+
+    <TextView
+        android:id="@+id/textView9_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8th\n sem"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/eighth_sem_notes"
+        app:layout_constraintEnd_toEndOf="@+id/eighth_sem_notes"
+        app:layout_constraintStart_toStartOf="@+id/eighth_sem_notes"
+        app:layout_constraintTop_toTopOf="@+id/eighth_sem_notes" />
+
+    <TextView
+        android:id="@+id/textView10_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Read"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13_notes"
+        app:layout_constraintEnd_toEndOf="@+id/imageView13_notes"
+        app:layout_constraintStart_toStartOf="@+id/imageView13_notes"
+        app:layout_constraintTop_toTopOf="@+id/imageView13_notes" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

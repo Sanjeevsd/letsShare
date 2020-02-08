@@ -14,7 +14,6 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.letsshare.R
 import com.example.letsshare.books
-import com.example.letsshare.notesend
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -32,9 +31,6 @@ class GalleryFragment : Fragment() {
     val adminref = FirebaseDatabase.getInstance().getReference()
     val aid = FirebaseAuth.getInstance().uid
     var pname: String = ""
-    val storeref=FirebaseStorage.getInstance().getReference("/notes/")
-    var fileurl:String=""
-    val dataref=FirebaseDatabase.getInstance().getReference()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -53,22 +49,9 @@ class GalleryFragment : Fragment() {
         post_frag.setOnClickListener {
             postUploadDatabase()
         }
-        selectpdf_frag.setOnClickListener{
-            selectpdf()
-        }
-        postpdf_frag.setOnClickListener {
-            postpdf()
-        }
 
         return root
     }
-    private fun selectpdf(){
-        val selectPdf=Intent(Intent.ACTION_PICK)
-        selectPdf.type="application/pdf"
-        startActivityForResult(selectPdf, 1)
-    }
-
-
     private fun selectPicture() {
         val selectPic = Intent(Intent.ACTION_PICK)
         selectPic.type = "image/*"
@@ -91,44 +74,9 @@ class GalleryFragment : Fragment() {
                         }
                     }
             }
-            else if (requestCode == 1 && resultCode == Activity.RESULT_OK && data != null) {
-                    Log.d("note", "File was selected")
-                    var selectedFileuri = data.data
-                    if (selectedFileuri != null) {
-                        val fileid = UUID.randomUUID().toString()
-                        storeref.child("/$fileid").putFile(selectedFileuri)
-                            .addOnSuccessListener {
-                                storeref.downloadUrl.addOnSuccessListener {
-
-                                    Log.d("admin", "urlis${it.toString()}")
-                                    fileurl = it.toString()
-                                    Log.d("note","the url is:$fileurl")
-                                }
-                            }
-                    }
-                }
-            }
-            }
-
-    private fun postpdf() {
-        val filename = titlepdf_frag.text.toString()
-        Log.d("note", "the url is::::$fileurl")
-        val semester1 = semesterpdf_frag.text.toString()
-        if (filename.isEmpty() || semester1.isEmpty()) {
-            Toast.makeText(context, "Please Fill all the information", Toast.LENGTH_SHORT).show()
-            return
-        } else {
-            val notesen = notesend(filename, fileurl)
-            dataref.child("/Notes/$semester1").setValue(notesen)
-                .addOnCompleteListener {
-                }
-            Toast.makeText(context, "PDF Posted", Toast.LENGTH_SHORT).show()
-
-
         }
+
     }
-
-
 
 
 

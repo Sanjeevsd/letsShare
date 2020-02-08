@@ -66,7 +66,7 @@ class book_activity : AppCompatActivity() {
 
                     val noticet=it.getValue(books::class.java)
                     Log.d("notice","price is:${noticet?.price}")
-                    if (noticet!=null)
+                    if (noticet!=null && noticet.permission!="false")
                     {
                         adapter.add(dataitem(noticet))
                     }
