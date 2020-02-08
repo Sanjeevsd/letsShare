@@ -25,9 +25,31 @@ class HomeFragment : Fragment() {
         homeViewModel =
             ViewModelProviders.of(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
-        root.sem_first.setOnClickListener {
-            Log.d("main","clicked")
+        root.first_sem.setOnClickListener {
+            Log.d("main","clicked1")
         }
+        root.second_sem.setOnClickListener {
+            Log.d("main","clicked2")
+        }
+        root.third_sem.setOnClickListener {
+            Log.d("main","clicked3")
+        }
+        root.fourth_sem.setOnClickListener {
+            Log.d("main","clicked4")
+        }
+        root.fifth_sem.setOnClickListener {
+            Log.d("main","clicked5")
+        }
+        root.sixth_sem.setOnClickListener {
+            Log.d("main","clicked6")
+        }
+        root.seventh_sem.setOnClickListener {
+            Log.d("main","clicked7")
+        }
+        root.eighth_sem.setOnClickListener {
+            Log.d("main","clicked8")
+        }
+
         return root
     }
 }

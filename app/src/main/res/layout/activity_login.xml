@@ -26,6 +26,7 @@
     <EditText
         android:id="@+id/username_login"
         android:layout_width="316dp"
+        android:paddingLeft="10dp"
         android:layout_height="57dp"
         android:layout_marginStart="-100dp"
         android:layout_marginLeft="-100dp"
@@ -50,6 +51,7 @@
         android:background="#BB7CAC"
         android:ems="10"
         android:hint="********"
+        android:paddingLeft="10dp"
         android:inputType="textPassword"
         android:textColor="#D9CCCA"
         app:layout_constraintEnd_toEndOf="@+id/username_login"
