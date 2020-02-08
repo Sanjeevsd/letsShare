@@ -19,59 +19,70 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/title_frag"
-        android:layout_width="316dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="12dp"
-        android:text="Title Of Book"
-        android:background="#BB7CAC"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/upload_frag"
-        app:layout_constraintStart_toStartOf="@+id/upload_frag"
-        app:layout_constraintTop_toBottomOf="@+id/upload_frag" />
-
-    <TextView
-        android:id="@+id/semester_frag"
-        android:layout_width="316dp"
-        android:background="#BB7CAC"
-        android:layout_height="57dp"
-        android:layout_marginTop="12dp"
-        android:text="Semester"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/title_frag"
-        app:layout_constraintStart_toStartOf="@+id/title_frag"
-        app:layout_constraintTop_toBottomOf="@+id/title_frag" />
-
-    <TextView
-        android:id="@+id/price_frag"
-        android:layout_width="316dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="12dp"
-        android:background="#BB7CAC"
-        android:text="Price"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="@+id/semester_frag"
-        app:layout_constraintStart_toStartOf="@+id/semester_frag"
-        app:layout_constraintTop_toBottomOf="@+id/semester_frag" />
-
     <Button
         android:id="@+id/select_frag"
         android:layout_width="100dp"
-        android:background="#BB7CAC"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
+        android:background="#BB7CAC"
         android:text="Select Photo"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
         app:layout_constraintStart_toStartOf="@+id/price_frag"
         app:layout_constraintTop_toBottomOf="@+id/price_frag" />
 
     <Button
         android:id="@+id/post_frag"
         android:layout_width="100dp"
-        android:background="#BB7CAC"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
+        android:background="#BB7CAC"
         android:text="Post"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
         app:layout_constraintEnd_toEndOf="@+id/price_frag"
         app:layout_constraintTop_toBottomOf="@+id/price_frag" />
+
+    <EditText
+        android:id="@+id/title_frag"
+        android:layout_width="316dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Title Of Book"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/upload_frag"
+        app:layout_constraintStart_toStartOf="@+id/upload_frag"
+        app:layout_constraintTop_toBottomOf="@+id/upload_frag" />
+
+    <EditText
+        android:id="@+id/semester_frag"
+        android:layout_width="316dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Semester"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
+        app:layout_constraintEnd_toEndOf="@+id/title_frag"
+        app:layout_constraintStart_toStartOf="@+id/title_frag"
+        app:layout_constraintTop_toBottomOf="@+id/title_frag" />
+
+    <EditText
+        android:id="@+id/price_frag"
+        android:layout_width="316dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Price"
+        android:textAlignment="center"
+        android:textColor="#D9CCCA"
+        app:layout_constraintEnd_toEndOf="@+id/semester_frag"
+        app:layout_constraintStart_toStartOf="@+id/semester_frag"
+        app:layout_constraintTop_toBottomOf="@+id/semester_frag" />
 </androidx.constraintlayout.widget.ConstraintLayout>
