@@ -43,6 +43,7 @@ class GalleryFragment : Fragment() {
 
         return root
         select_frag.setOnClickListener {
+            Log.d("gallary fragment", "clicked hai")
             selectPicture()
         }
         post_frag.setOnClickListener {
