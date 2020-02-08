@@ -41,7 +41,7 @@ class GalleryFragment : Fragment() {
             ViewModelProviders.of(this).get(GalleryViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_gallery, container, false)
 
-        return root
+
         select_frag.setOnClickListener {
             Log.d("gallary fragment", "clicked hai")
             selectPicture()
@@ -50,7 +50,7 @@ class GalleryFragment : Fragment() {
             postUploadDatabase()
         }
 
-
+        return root
     }
     private fun selectPicture() {
         val selectPic = Intent(Intent.ACTION_PICK)
