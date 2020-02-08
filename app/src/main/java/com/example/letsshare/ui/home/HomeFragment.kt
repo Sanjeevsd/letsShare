@@ -1,5 +1,6 @@
 package com.example.letsshare.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -11,6 +12,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.letsshare.R
+import com.example.letsshare.book_activity
 import kotlinx.android.synthetic.main.fragment_home.view.*
 
 class HomeFragment : Fragment() {
@@ -26,28 +28,44 @@ class HomeFragment : Fragment() {
             ViewModelProviders.of(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
         root.first_sem.setOnClickListener {
-            Log.d("main","clicked1")
+            val ints=Intent(context,book_activity::class.java)
+            ints.putExtra("sem","first")
+            startActivity(ints)
         }
         root.second_sem.setOnClickListener {
-            Log.d("main","clicked2")
+            val ints=Intent(context,book_activity::class.java)
+            ints.putExtra("sem","second")
+            startActivity(ints)
         }
         root.third_sem.setOnClickListener {
-            Log.d("main","clicked3")
+            val ints=Intent(context,book_activity::class.java)
+            ints.putExtra("sem","third")
+            startActivity(ints)
         }
         root.fourth_sem.setOnClickListener {
-            Log.d("main","clicked4")
+            val ints=Intent(context,book_activity::class.java)
+            ints.putExtra("sem","fourth")
+            startActivity(ints)
         }
         root.fifth_sem.setOnClickListener {
-            Log.d("main","clicked5")
+            val ints=Intent(context,book_activity::class.java)
+            ints.putExtra("sem","fifth")
+            startActivity(ints)
         }
         root.sixth_sem.setOnClickListener {
-            Log.d("main","clicked6")
+            val ints=Intent(context,book_activity::class.java)
+            ints.putExtra("sem","sixth")
+            startActivity(ints)
         }
         root.seventh_sem.setOnClickListener {
-            Log.d("main","clicked7")
+            val ints=Intent(context,book_activity::class.java)
+            ints.putExtra("sem","seventh")
+            startActivity(ints)
         }
         root.eighth_sem.setOnClickListener {
-            Log.d("main","clicked8")
+            val ints=Intent(context,book_activity::class.java)
+            ints.putExtra("sem","eight")
+            startActivity(ints)
         }
 
         return root
